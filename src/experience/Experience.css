@@ -1,0 +1,225 @@
+.experience-container{
+    margin: 40px;
+    /* border: 2px solid rebeccapurple; */
+  }
+
+  .card {
+    background: #141414; 
+    color: white;
+    width: 600px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgb(16, 16, 16);
+  }
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  .one{
+    display: flex;
+  }
+  .two{
+    display: flex;
+  }
+  .three{
+    display: flex;
+  }
+  .four{
+    display: flex;
+  }
+  .card-0 {
+    /* border-left: 5px solid #ffcc00; 
+    border-right: 5px solid #ffcc00;  */
+    /* margin-left: 30px; */
+    width:709px;
+    height: 320px;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+  }
+  .card-1 {
+    border-left: 10px solid #ffcc00; 
+    /* border-right: 5px solid #ffcc00; */
+    /* margin-right:0%; */
+    width:709px;
+    height: 390px;
+    padding-left: 30px;
+    border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+  }
+
+  .card-2 {
+    /* border-left: 5px solid #ffcc00;  */
+    /* border-right: 5px solid #ffcc00; */
+    /* margin-left: 30px; */
+    /* border: 5px solid #ffcc00;  */
+    width:709px;
+    height: 320px;
+    border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+
+  }
+  .card-3 {
+    /* border: 5px solid #ffcc00;  */
+    border-left: 10px solid #ffcc00; 
+    /* border-right: 5px solid #ffcc00; */
+    margin-right:0%;
+    width:709px;
+    height: 320px;
+    padding-left: 30px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .larrow{
+    border-left: 10px solid #ffcc00; 
+    display: flex;
+    width: 709px;
+    height: 370px;
+  }
+
+  .rarrow{
+    display: flex;
+    width: 709px;
+    height: 370px;
+  }
+
+  .arrowsizel{
+    padding-top: 0%;
+    padding-left: 50px;
+font-size: 250px;
+margin-top: 0%;
+margin-bottom: 0%;
+width: 1000px;
+  }
+  .arrowsizer{
+    padding-top: 0%;
+    /* padding-right: 50px; */
+font-size: 250px;
+margin-top: 0%;
+margin-left: 500px;
+margin-bottom: 0%;
+width: 1000px;
+  }
+ 
+  
+  
+  /* .experience-container{
+    margin-top: 40px;
+  }
+  .card {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #141414; 
+    color: white;
+    width: 600px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgb(16, 16, 16);
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .card-0 {
+    border-left: 5px solid #ffcc00; 
+    margin-left: 60px;
+  }
+  
+  
+  
+ 
+ 
+  .card .duration {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #cccccc; 
+  }
+  
+
+  .card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .card ul {
+    margin: 1rem 0;
+    padding-left: 1.25rem;
+    list-style: disc; 
+  }
+  
+  
+  .card .environment {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  .arrow-button {
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: white;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease; 
+  }
+  
+  .arrow-button:hover {
+    transform: scale(1.2); 
+    color: rgb(68, 210, 68);
+  }
+  
+  .buttonplaces{
+    display: flex;
+  }
+
+  .rib1{
+    margin-left: 1290px;
+  }
+
+  .lef1{
+    margin-left: 60px;
+  }
+
+  .one{
+    width:750px;
+    border-right: 5px solid white;
+  }
+
+  .three{
+    width:750px;
+    border-right: 5px solid white;
+  }
+
+  .two{
+    width:750px;
+    border-right: 5px solid white;
+  }
+
+  .four{
+    width:750px;
+    border-right: 5px solid white;
+  }
+
+*/
+@keyframes blink {
+    0% {
+      opacity: 1; 
+    }
+    50% {
+      opacity: 0.2; 
+    }
+    100% {
+      opacity: 1; 
+    }
+  }
+  
+ 
+  .arrowsizel.blink {
+    animation: blink 1s infinite;
+  }
+
+  .arrowsizer.blink {
+    animation: blink 1s infinite;
+  }
+   

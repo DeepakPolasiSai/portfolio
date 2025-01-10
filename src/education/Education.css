@@ -1,0 +1,84 @@
+.education-section {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0rem;
+  }
+
+  .education-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* margin-top: 2rem; */
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 2rem;
+    border: 1px solid #ccc; 
+    border-radius: 15px;
+    padding: 2rem;
+    transition: transform 0.3s ease; 
+  }
+
+  .education-item:hover{
+    transform: scale(1.1); 
+  }
+  
+  .education-details {
+    max-width: 70%; 
+  }
+  
+  .education-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    color: white; 
+  }
+  
+  .education-details p {
+    margin: 0.5rem 0;
+    color: white; 
+  }
+  
+  .education-date {
+    text-align: right;
+    font-size: 1rem;
+    color: white; 
+  }
+  
+  .clg{
+    display: flex;
+  }
+
+  .imgsize{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 1rem;
+  }
+
+  .arrow-button {
+    font-size: 3rem;
+    color: white;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.3s ease; 
+  }
+  
+  .arrow-button:hover {
+    transform: scale(1.2); 
+    color: rgb(68, 210, 68);
+  }
+  
+  .buttonplaces{
+    display: flex;
+  }
+
+  .rib1{
+    margin-left: 1290px;
+  }
+
+  .lef1{
+    margin-left: 60px;
+  }
