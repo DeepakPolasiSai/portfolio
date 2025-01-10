@@ -103,25 +103,25 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    background: rgba(0, 0, 0, 0.8); 
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensures it appears above all other elements */
+    z-index: 1000; 
     
   }
   
   /* Modal content box */
   .modal-content {
     overflow-y: scroll;
-    background: #141414; /* Dark background */
+    background: #141414; 
     padding: 2rem;
     max-height: 80vh;
     border-radius: 10px;
     width: 60%;
     text-align: center;
     color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Subtle shadow for effect */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
   }
   
   /* Close button styling */
@@ -139,9 +139,9 @@
     color: red;
   }
   
-  /* Disable pointer events for inactive elements */
+  
   body.modal-open {
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden;
   }
   
   .modaldesign{

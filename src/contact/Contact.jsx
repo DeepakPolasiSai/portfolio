@@ -21,8 +21,8 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Message sent!"); // Simple alert to show form submission
-    setFormData({ name: "", email: "", message: "" }); // Reset form fields
+    alert("Message sent!"); 
+    setFormData({ name: "", email: "", message: "" }); 
   };
 
   const navigate = useNavigate();

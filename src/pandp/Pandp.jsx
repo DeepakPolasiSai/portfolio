@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import './Pandp.css'
 
 export default function Pandp(){
     const navigate = useNavigate();
@@ -11,9 +12,10 @@ export default function Pandp(){
     };
     return(
         <>
-        <div>
-            hi
-        </div>
+       <div className="washing-spinner-container">
+      <span className="loader"></span>
+      <p className="spinner-text">Build in Progress...</p>
+    </div>
         <section className='buttonplaces'>
 <div className='lef1'>
 <button className="arrow-button" onClick={handleleftArrowClick}>
