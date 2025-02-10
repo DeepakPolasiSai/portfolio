@@ -1,16 +1,7 @@
 import React from 'react';
 import './Experience.css';
-import { useNavigate } from 'react-router-dom';
 
-const Experience = () => {
-        const navigate = useNavigate();
-    
-      const handleleftArrowClick = () => {
-        navigate('/skills'); 
-      };
-      const handlerightArrowClick = () => {
-        navigate('/certification'); 
-      };
+export default function Experience(){
 
   return (
     <>
@@ -97,21 +88,7 @@ const Experience = () => {
     </div>
     </div>
 
-<section className='buttonplaces'>
-<div className='lef1'>
-<button className="arrow-button" onClick={handleleftArrowClick}>
-←
-</button>
-</div>
-<div className='rib1'>
-<button className="arrow-button" onClick={handlerightArrowClick}>
-→   
-</button>
-</div>
-</section>
-
 </>
  );
 };
 
-export default Experience;

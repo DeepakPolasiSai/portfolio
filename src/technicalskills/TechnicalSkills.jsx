@@ -141,6 +141,11 @@ export default function TechnicalSkills() {
   };
 
   return (
+    <>
+    <section className="screen">
+    <section className='designtech'>
+      <h2>Technical Skills</h2>
+      </section>
     <div className="carousel-container">
       <div className="carousel">
         {skills.map((skill, index) => (
@@ -188,5 +193,7 @@ export default function TechnicalSkills() {
         ))}
       </div>
     </div>
+    </section>
+    </>
   );
 }

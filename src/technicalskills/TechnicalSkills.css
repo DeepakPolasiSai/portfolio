@@ -1,17 +1,23 @@
 /* Carousel Container */
 .carousel-container {
-  margin: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 900px; /* Adjust max width of the carousel */
-  margin: 2rem auto; /* Center carousel horizontally and vertically */
+  max-width: 1200px; /* Adjust max width of the carousel */
+  margin: 2rem auto;
   overflow: hidden;
   background-color: #121212; /* Background color for the carousel */
   border-radius: 15px;
   padding: 1rem;
+}
+.designtech{
+  display: flex;
+ justify-content: center;
+}
+.screen{
+  height: 100vh;
 }
 
 /* Carousel Wrapper */
@@ -44,7 +50,7 @@
 .carousel-items {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Space between skill items */
+  gap: 3rem; /* Space between skill items */
 }
 
 /* Individual Skill Item */
@@ -116,6 +122,8 @@
 @media (max-width: 768px) {
   .carousel-container {
     height: 250px; /* Adjust height for smaller screens */
+    width: 100%;
+  max-width: 700px;
   }
 
   .carousel-button {

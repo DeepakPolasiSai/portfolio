@@ -2,10 +2,11 @@
 .education-section {
   height: 100vh;
   margin-top: 1rem; /* Adjust this value as needed */
-  padding: 2rem;
+  /* margin-bottom: 1rem; */
+  padding: 0rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* Adds consistent spacing between items */
+  gap: 2rem; 
 }
 
 .design{
@@ -79,6 +80,10 @@
 }
 
 @media (max-width: 768px) {
+  .education-section {
+    margin-top: 1rem; 
+    margin-bottom: 14rem;
+  }
   .education-item {
     flex-direction: column; /* Stack content on smaller screens */
     gap: 1rem;
@@ -90,6 +95,10 @@
 }
 
 @media (max-width: 480px) {
+  .education-section {
+    margin-top: 1rem; 
+    margin-bottom: 34rem;
+  }
   .education-details h3 {
     font-size: 1.3rem;
   }
