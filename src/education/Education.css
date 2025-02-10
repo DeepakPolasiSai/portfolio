@@ -1,84 +1,109 @@
+/* Add margin to separate sections */
 .education-section {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 0rem;
-  }
+  height: 100vh;
+  margin-top: 1rem; /* Adjust this value as needed */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Adds consistent spacing between items */
+}
 
+.design{
+  display: flex;
+ justify-content: center;
+}
+
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #222; /* Subtle background for contrast */
+  border: 1px solid #ccc; 
+  border-radius: 15px;
+  padding: 2rem;
+  gap: 2rem; /* Spacing between details and date */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.education-item:hover {
+  transform: scale(1.03); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.education-details {
+  flex: 3;
+  color: white;
+}
+
+.education-details h3 {
+  font-size: 1.5rem; /* Larger font size for headings */
+  font-weight: bold;
+  margin: 0 0 0.5rem 0;
+  color: white; 
+}
+
+.education-details h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+  color: #ddd;
+}
+
+.education-details p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+.education-date {
+  flex: 1;
+  text-align: right;
+  font-size: 1rem;
+  color: #bbb; 
+  display: flex;
+  align-items: flex-start;
+}
+
+.clg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.imgsize {
+  width: 40px; /* Slightly larger for better visibility */
+  height: 40px;
+  border-radius: 50%; /* Circular images */
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
   .education-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    /* margin-top: 2rem; */
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 2rem;
-    border: 1px solid #ccc; 
-    border-radius: 15px;
-    padding: 2rem;
-    transition: transform 0.3s ease; 
+    flex-direction: column; /* Stack content on smaller screens */
+    gap: 1rem;
   }
 
-  .education-item:hover{
-    transform: scale(1.1); 
-  }
-  
-  .education-details {
-    max-width: 70%; 
-  }
-  
-  .education-details h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0;
-    color: white; 
-  }
-  
-  .education-details p {
-    margin: 0.5rem 0;
-    color: white; 
-  }
-  
   .education-date {
-    text-align: right;
-    font-size: 1rem;
-    color: white; 
+    text-align: left; /* Align date below details */
   }
-  
-  .clg{
-    display: flex;
+}
+
+@media (max-width: 480px) {
+  .education-details h3 {
+    font-size: 1.3rem;
   }
 
-  .imgsize{
+  .education-details h4 {
+    font-size: 1rem;
+  }
+
+  .education-details p {
+    font-size: 0.9rem;
+  }
+
+  .imgsize {
     width: 30px;
     height: 30px;
-    border-radius: 30px;
-    margin-right: 1rem;
   }
-
-  .arrow-button {
-    font-size: 3rem;
-    color: white;
-    background: none; 
-    border: none; 
-    cursor: pointer;
-    outline: none;
-    transition: transform 0.3s ease; 
-  }
-  
-  .arrow-button:hover {
-    transform: scale(1.2); 
-    color: rgb(68, 210, 68);
-  }
-  
-  .buttonplaces{
-    display: flex;
-  }
-
-  .rib1{
-    margin-left: 1290px;
-  }
-
-  .lef1{
-    margin-left: 60px;
-  }
+}

@@ -1,98 +1,163 @@
 .about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 2rem;
-    padding-top: 2rem;
-    /* border-bottom: 1px solid yellow; */
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem; /* Increased padding for better spacing */
+  flex-direction: column; /* Align content in column layout */
+}
+
+.about-container {
+  display: flex;
+  max-width: 1400px; /* Increased max-width for larger content */
+  width: 100%;
+  gap: 3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Profile Picture Styling */
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular-logo {
+  width: 450px; /* Increased size of the circular logo */
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: bottom;
+  border: 3px solid azure;
+  transition: transform 0.3s ease;
+}
+
+.circular-logo:hover {
+  transform: translateY(-10px);
+}
+
+/* About Content */
+.about-content {
+  flex: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-content h1 {
+  font-size: 2.5rem; /* Increased font size */
+  margin: 0;
+  color: white;
+}
+
+.about-content h3 {
+  font-size: 1.5rem; /* Increased font size */
+  margin: 0.5rem 0;
+}
+
+.about-content p {
+  font-size: 1.4rem; /* Increased font size */
+  line-height: 1.2;
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+/* Navigation Button */
+.buttonplace {
+  position: fixed; /* Fix button position */
+  bottom: 2rem; /* Position at the bottom */
+  right: 2rem; /* Align to the left */
+}
+
+.arrow-button {
+  font-size: 3rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.3s ease;
+}
+
+.arrow-button:hover {
+  transform: scale(1.2);
+  color: rgb(68, 210, 68);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .about-container {
-    display: flex; 
-    max-width: 1200px; 
-    width: 100%;
-    gap: 5rem; 
+      flex-direction: column;
+      text-align: center;
   }
-  
-  .logo-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-start; 
-    align-items: center;
-    margin-left: -120px; 
-  }
-  
-  
+
   .circular-logo {
-    width: 480px;
-    height: 480px;
-    border-radius: 50%;
-    object-fit: cover; 
-    object-position: bottom; 
-    border: 3px solid azure;
-    transition: transform 0.3s ease;
+      width: 300px;
+      height: 300px;
   }
-  .circular-logo:hover{
-    transform: translateY(-10px);
-  }
-  
-  .about-content {
-    flex: 2; 
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-  }
-  
+
   .about-content h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: white;
+      font-size: 2rem;
   }
-  
-  .about-content h2 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-    color: white;
+
+  .about-content h3 {
+      font-size: 1.8rem;
   }
-  
+
   .about-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-top: 1rem;
+      font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .circular-logo {
+      width: 250px;
+      height: 250px;
+  }
+
+  .about-content h1 {
+      font-size: 1.8rem;
+  }
+
+  .about-content h3 {
+      font-size: 1.5rem;
+  }
+
+  .about-content p {
+      font-size: 0.9rem;
+  }
+
   .arrow-button {
-    font-size: 3rem;
-    color: white;
-    background: none; 
-    border: none; 
-    cursor: pointer;
-    outline: none;
-    transition: transform 0.3s ease; 
+      font-size: 2.5rem;
   }
-  
-  .arrow-button:hover {
-    transform: scale(1.2); 
-    color: rgb(68, 210, 68);
-  }
-  
-  .buttonplace{
-    margin-left: 1400px;
+}
+
+@media (max-width: 480px) {
+  .about-section {
+      padding: 1rem;
   }
 
-  .name{
-    transition: transform 0.3s ease;
-  }
-  .name:hover{
-    transform: translateY(-10px);
-    color: rgb(16, 211, 120);
+  .circular-logo {
+      width: 200px;
+      height: 200px;
   }
 
-  .about{
-    transition: transform 0.3s ease;
+  .about-content h1 {
+      font-size: 1.5rem;
   }
-  .about:hover{
-    transform: translateY(-10px);
-    color: rgb(0, 255, 136);
+
+  .about-content h3 {
+      font-size: 1.2rem;
   }
+
+  .about-content p {
+      font-size: 0.8rem;
+  }
+
+  .arrow-button {
+      font-size: 2rem;
+  }
+}
