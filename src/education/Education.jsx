@@ -6,6 +6,7 @@ import fiu from '../assets/fiu.png';
 const Education = () => {
   return (
     <>
+    <hr className="section-divider" />
       <section className="education-section">
         <section className='design'>
       <h2>Education</h2>

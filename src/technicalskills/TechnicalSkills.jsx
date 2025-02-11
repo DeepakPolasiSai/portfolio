@@ -142,6 +142,7 @@ export default function TechnicalSkills() {
 
   return (
     <>
+        <hr className="section-divider" />
     <section className="screen">
     <section className='designtech'>
       <h2>Technical Skills</h2>

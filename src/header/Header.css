@@ -1,42 +1,149 @@
+/* Fixed Header */
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    background-color: black;
-    color: #fff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 98%;
+  background-color: rgb(187, 187, 187);
+  /* color: black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Desktop Navigation in Column */
+.nav-desktop {
+  display: flex;
+  justify-content: center; /* Center the navigation */
+}
+
+.nav-list1 {
+  display: flex;
+  flex-direction: row; /* Stack items vertically */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px; /* Spacing between items */
+}
+
+.nav-list1 li {
+  text-align: center;
+}
+
+.nav-list1 li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list1 li a:hover {
+  color: blue;
+}
+
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+
+/* Hide Mobile Navigation by Default */
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Keeps menu hidden */
+  width: 70%; /* Menu width */
+  height: 100%;
+  background: #161b22;
+  flex-direction: column;
+  padding: 10px;
+  transition: left 0.3s ease-in-out;
+}
+
+/* Show Navigation When Active */
+.nav.nav-open {
+  left: 0;
+}
+
+/* Navigation Links */
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 50px 20px;
+}
+
+.nav-list li {
+  margin: 15px 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  padding: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-list li a:hover {
+  color: #58a6ff;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1170px) {
+.header{
+  width: 95%;
+}
+
+  .menu-icon {
+    display: block;
   }
-  
-  .logo img {
-    height: 50px;
-  }
-  
+
+  /* Hide normal nav on small screens */
   .nav {
-    display: flex;
+    position: fixed;
+    left: -100%; /* Menu is hidden initially */
+    width: 70%;
+    height: 100%;
+    background: #161b22;
+    transition: left 0.3s ease-in-out;
+    padding-top: 20px;
   }
-  
+
+  /* Show menu when opened */
+  .nav.nav-open {
+    left: 0;
+  }
+
   .nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    flex-direction: column;
+    text-align: left;
   }
-  
+
   .nav-list li {
-    margin: 0 1rem;
+    text-align: center;
   }
-  
-  .nav-list a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
+
+  .nav-list li a {
+    font-size: 18px;
+    padding: 15px;
+    display: block;
   }
-  
-  .nav-list a:hover {
-    color: #00bcd4;
-  }
-  
+}

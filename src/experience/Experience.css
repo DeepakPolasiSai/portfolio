@@ -1,225 +1,120 @@
-.experience-container{
-    margin: 40px;
-    /* border: 2px solid rebeccapurple; */
-  }
+/* 📌 Experience Section */
+.experience-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Aligns cards to the left */
+  gap: 1.5rem;
+  padding: 2rem;
+}
 
-  .card {
-    background: #141414; 
-    color: white;
-    width: 600px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgb(16, 16, 16);
-  }
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  .one{
-    display: flex;
-  }
-  .two{
-    display: flex;
-  }
-  .three{
-    display: flex;
-  }
-  .four{
-    display: flex;
-  }
-  .card-0 {
-    /* border-left: 5px solid #ffcc00; 
-    border-right: 5px solid #ffcc00;  */
-    /* margin-left: 30px; */
-    width:709px;
-    height: 320px;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
-  }
-  .card-1 {
-    border-left: 10px solid #ffcc00; 
-    /* border-right: 5px solid #ffcc00; */
-    /* margin-right:0%; */
-    width:709px;
-    height: 390px;
-    padding-left: 30px;
-    border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
-  }
+/* 📌 Experience Card */
+.experience-card {
+  background-color: #f9f9f9;
+  color: black;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
 
-  .card-2 {
-    /* border-left: 5px solid #ffcc00;  */
-    /* border-right: 5px solid #ffcc00; */
-    /* margin-left: 30px; */
-    /* border: 5px solid #ffcc00;  */
-    width:709px;
-    height: 320px;
-    border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+.experience-card:hover {
+  transform: translateY(-5px);
+}
 
-  }
-  .card-3 {
-    /* border: 5px solid #ffcc00;  */
-    border-left: 10px solid #ffcc00; 
-    /* border-right: 5px solid #ffcc00; */
-    margin-right:0%;
-    width:709px;
-    height: 320px;
-    padding-left: 30px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
+/* 📌 Job Details */
+.company-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
 
-  .larrow{
-    border-left: 10px solid #ffcc00; 
-    display: flex;
-    width: 709px;
-    height: 370px;
-  }
+.job-title {
+  font-size: 1.3rem;
+}
 
-  .rarrow{
-    display: flex;
-    width: 709px;
-    height: 370px;
-  }
+.job-duration {
+  font-size: 1rem;
+  color: #bbb;
+}
 
-  .arrowsizel{
-    padding-top: 0%;
-    padding-left: 50px;
-font-size: 250px;
-margin-top: 0%;
-margin-bottom: 0%;
-width: 1000px;
-  }
-  .arrowsizer{
-    padding-top: 0%;
-    /* padding-right: 50px; */
-font-size: 250px;
-margin-top: 0%;
-margin-left: 500px;
-margin-bottom: 0%;
-width: 1000px;
-  }
- 
+/* 📌 Preview Button */
+.preview-button {
+  background-color:  #0056b3;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #0056b3;
+}
+
+/* 📌 Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  text-align: left;
+  position: relative;
+  z-index: 1001;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+/* 📌 Close Button */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1002;
+}
+
+.close-button:hover {
+  background: #f5f5f5;
+}
+
+/* 📌 Bold Text for Headings */
+.bold-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 1rem;
   
-  
-  /* .experience-container{
-    margin-top: 40px;
-  }
-  .card {
-    padding: 1rem;
-    border-radius: 8px;
-    background: #141414; 
-    color: white;
-    width: 600px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgb(16, 16, 16);
-  }
+}
 
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-0 {
-    border-left: 5px solid #ffcc00; 
-    margin-left: 60px;
-  }
-  
-  
-  
- 
- 
-  .card .duration {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    color: #cccccc; 
-  }
-  
-
-  .card h4 {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .card ul {
-    margin: 1rem 0;
-    padding-left: 1.25rem;
-    list-style: disc; 
-  }
-  
-  
-  .card .environment {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #cccccc;
-  }
-  
-  .arrow-button {
-    font-size: 3rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    color: white;
-    background: none; 
-    border: none; 
-    cursor: pointer;
-    outline: none;
-    transition: transform 0.3s ease; 
-  }
-  
-  .arrow-button:hover {
-    transform: scale(1.2); 
-    color: rgb(68, 210, 68);
-  }
-  
-  .buttonplaces{
-    display: flex;
-  }
-
-  .rib1{
-    margin-left: 1290px;
-  }
-
-  .lef1{
-    margin-left: 60px;
-  }
-
-  .one{
-    width:750px;
-    border-right: 5px solid white;
-  }
-
-  .three{
-    width:750px;
-    border-right: 5px solid white;
-  }
-
-  .two{
-    width:750px;
-    border-right: 5px solid white;
-  }
-
-  .four{
-    width:750px;
-    border-right: 5px solid white;
-  }
-
-*/
-@keyframes blink {
-    0% {
-      opacity: 1; 
-    }
-    50% {
-      opacity: 0.2; 
-    }
-    100% {
-      opacity: 1; 
-    }
-  }
-  
- 
-  .arrowsizel.blink {
-    animation: blink 1s infinite;
-  }
-
-  .arrowsizer.blink {
-    animation: blink 1s infinite;
-  }
-   
+/* 📌 Modal Details */
+.modal-details {
+  font-size: 1rem;
+  line-height: 1.6;
+}

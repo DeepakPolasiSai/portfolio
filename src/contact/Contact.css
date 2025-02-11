@@ -1,81 +1,42 @@
-.contact-me {
-    display: flex;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 90px;
-    background: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-me h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact-form .form-group {
-    margin-bottom: 15px;
-    color: black;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
-  .contact-form textarea {
-    resize: vertical;
-  }
-  
-  .send-button {
-    width: 100%;
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .send-button:hover {
-    background-color: #0056b3;
-  }
-  
-  .line{
-    border: 1px solid rgb(5, 179, 8);
+.social {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: rgb(187, 187, 187);
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+
+.logofont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+.logofont:hover {
+  color: blue;
+}
+.mobile-hide {
+  display: none; /* Makes the image clickable */
+}
+
+/* Hide links & show only images on mobile */
+@media (max-width: 700px) {
+  .desktop-only {
+    display: none; /* Hides the text links on mobile */
   }
 
-  .social{
-    padding-top: 70px;
+  .mobile-hide {
+    display: inline-block; /* Makes the image clickable */
   }
-
-  .logos{
-    /* border: 1px solid palevioletred; */
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-
-  .logofont{
-    text-decoration: none;
-    font-size: larger;
-    transition: transform 0.3s ease;
-    margin-left:20px ;
-  }
-
-  .logofont:hover{
-    transform: translateY(-2px);
-  }
+}

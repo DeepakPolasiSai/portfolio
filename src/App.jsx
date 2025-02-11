@@ -1,4 +1,4 @@
-import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+
 import Header from './header/Header.jsx'
 import About from './about/About.jsx'
 import Education from './education/Education.jsx'
@@ -8,24 +8,17 @@ import Certification from './certification/Certification.jsx'
 import Pandp from './pandp/Pandp.jsx'
 import Contact from './contact/Contact.jsx'
 
-// let router=createBrowserRouter([
-//     {path:'/', element:<About></About>},
-//     {path:'/education', element:<Education></Education>},
-//     {path:'/skills', element:<TechnicalSkills></TechnicalSkills>},
-//     {path:'/experience', element:<Experience></Experience>},
-//     {path:'/certification', element:<Certification></Certification>},
-//     {path:'/pandp', element:<Pandp></Pandp>},
-//     {path:'/contact', element:<Contact></Contact>}
-//   ])
-
 const App = () => {
   return (
     <>
-   <Header></Header>
-   <About></About>
-   <Education></Education>
-   <TechnicalSkills></TechnicalSkills>
-   <Experience></Experience>
+    <Header></Header>
+      <section id="about"><About /></section>
+      <section id="education"><Education /></section>
+      <section id="technical-skills"><TechnicalSkills /></section>
+      <section id="experience"><Experience /></section>
+      <section id="certifications"><Certification /></section>
+      <section id="projects"><Pandp /></section>
+      <section id="contact"><Contact /></section>
   </>
   );
 };

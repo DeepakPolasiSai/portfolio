@@ -1,7 +1,7 @@
 /* Add margin to separate sections */
 .education-section {
-  height: 100vh;
-  margin-top: 1rem; /* Adjust this value as needed */
+  height: 80vh;
+  margin-top: 1rem; 
   /* margin-bottom: 1rem; */
   padding: 0rem 2rem;
   display: flex;
@@ -9,16 +9,25 @@
   gap: 2rem; 
 }
 
+.section-divider {
+  width: 80%;
+  height: 2px;
+  background-color: rgb(122, 95, 232);
+  border: none;
+  margin: 2rem auto;  /* Centers the line */
+}
+
 .design{
   display: flex;
  justify-content: center;
+ color:#ffcc00;
 }
 
 .education-item {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background: #222; /* Subtle background for contrast */
+  background-color: #f9f9f9; /* Subtle background for contrast */
   border: 1px solid #ccc; 
   border-radius: 15px;
   padding: 2rem;
@@ -33,35 +42,35 @@
 
 .education-details {
   flex: 3;
-  color: white;
+  color: black;
 }
 
 .education-details h3 {
   font-size: 1.5rem; /* Larger font size for headings */
   font-weight: bold;
   margin: 0 0 0.5rem 0;
-  color: white; 
+  color: black; 
 }
 
 .education-details h4 {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0.5rem 0;
-  color: #ddd;
+  color: black;
 }
 
 .education-details p {
   margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.6;
-  color: #bbb;
+  color: black;
 }
 
 .education-date {
   flex: 1;
   text-align: right;
   font-size: 1rem;
-  color: #bbb; 
+  color: black; 
   display: flex;
   align-items: flex-start;
 }
@@ -83,6 +92,7 @@
   .education-section {
     margin-top: 1rem; 
     margin-bottom: 14rem;
+    height: 70vh;
   }
   .education-item {
     flex-direction: column; /* Stack content on smaller screens */

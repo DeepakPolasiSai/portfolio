@@ -4,20 +4,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  max-width: 1200px; /* Adjust max width of the carousel */
+  width: 80%;
+  /* max-width: 1000px; */
   margin: 2rem auto;
   overflow: hidden;
-  background-color: #121212; /* Background color for the carousel */
+  background-color: #f9f9f9; /* Background color for the carousel */
   border-radius: 15px;
-  padding: 1rem;
+  padding: 2rem;
 }
 .designtech{
   display: flex;
  justify-content: center;
+ color: #ffcc00;
 }
 .screen{
-  height: 100vh;
+  height: 70vh;
 }
 
 /* Carousel Wrapper */
@@ -31,7 +32,7 @@
 .carousel-slide {
   display: none; /* Hide all slides by default */
   text-align: center;
-  color: white;
+  color: black;
 }
 
 /* Active Slide */
@@ -42,7 +43,7 @@
 /* Category Title */
 .carousel-category {
   font-size: 1.8rem;
-  color: #ffcc00; /* Highlighted text color for category titles */
+  color: black; /* Highlighted text color for category titles */
   margin-bottom: 1rem;
 }
 
@@ -50,7 +51,7 @@
 .carousel-items {
   display: flex;
   justify-content: center;
-  gap: 3rem; /* Space between skill items */
+  gap: 5rem; /* Space between skill items */
 }
 
 /* Individual Skill Item */
@@ -72,7 +73,7 @@
 .carousel-name {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #ddd; /* Softer text color for names */
+  color: black; /* Softer text color for names */
 }
 
 /* Carousel Navigation Controls */
@@ -87,12 +88,12 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: white;
+  color: black;
   cursor: pointer;
 }
 
 .carousel-button:hover {
-  color: #ffcc00; /* Highlighted color on hover */
+  color: black; /* Highlighted color on hover */
 }
 
 .carousel-dots {
@@ -112,18 +113,22 @@
 }
 
 .dot:hover {
-  background-color: #ffcc00; /* Highlight on hover */
+  background-color: black; /* Highlight on hover */
 }
 
 .active-dot {
-  background-color: #ffcc00; /* Highlight active dot */
+  background-color: black; /* Highlight active dot */
 }
 
 @media (max-width: 768px) {
   .carousel-container {
     height: 250px; /* Adjust height for smaller screens */
-    width: 100%;
+    width: 80%;
   max-width: 700px;
+  }
+
+  .carousel{
+    max-width: 80%;
   }
 
   .carousel-button {
@@ -133,6 +138,10 @@
   .dot {
     width: 10px;
     height: 10px;
+  }
+
+  .carousel-logo {
+    object-fit:fill;
   }
 }
 
@@ -148,5 +157,20 @@
 
   .carousel-button {
     font-size: 1.2rem;
+  }
+
+  .carousel-logo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+  }
+  .carousel-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between skill items */
+  }
+
+  .screen{
+    height: 65vh;
   }
 }

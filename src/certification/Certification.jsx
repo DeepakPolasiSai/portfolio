@@ -25,7 +25,6 @@ import ppf from '../assets/certificates/azure/ppf.pdf'
 import scif from '../assets/certificates/azure/scif.pdf'
 import maf from '../assets/certificates/azure/maf.pdf'
 
-import { useNavigate } from 'react-router-dom';
 
 
 export default function Certification() {
@@ -90,53 +89,32 @@ export default function Certification() {
     document.body.classList.remove('modal-open'); 
   };
 
-  const navigate = useNavigate();
- 
-  const handleleftArrowClick = () => {
-    navigate('/experience'); 
-  };
-  const handlerightArrowClick = () => {
-    navigate('/pandp'); 
-  };
-
 
   return (
     <>
+        <hr className="section-divider" />
+     <section className='designtech'>
+      <h2>Certifications</h2>
+      </section>
       <div className="certi">
         <div className="AWS">
-          <h2>AWS Certification</h2>
+          <h2 className='fontdesign'>AWS Certification</h2>
           <button className="open" onClick={awsclickopen}>Open</button>
         </div>
         <div className="Azure">
-          <h2>Azure Certifications</h2>
+          <h2 className='fontdesign'>Azure Certifications</h2>
           <button className="open" onClick={azureclickopen}>Open</button>
         </div>
         <div className="LinkedIn">
-          <h2>LinkedIn Certifications</h2>
+          <h2 className='fontdesign'>LinkedIn Certifications</h2>
           <button className="open" onClick={linkedinclickopen}>
             Open
           </button>
         </div>
-        <div className="Terraform">
-          <h2>Terraform Certification</h2>
-          <button className="open" onClick={terclickopen}>Open</button>
-        </div>
-        <div className="Kubernetes">
-          <h2>Kubernetes Certification</h2>
-          <button className="open" onClick={kubclickopen}>Open</button>
-        </div>
+       
       </div>
       <section className='buttonplaces'>
-<div className='lef1'>
-<button className="arrow-button" onClick={handleleftArrowClick}>
-←
-</button>
-</div>
-<div className='rib1'>
-<button className="arrow-button" onClick={handlerightArrowClick}>
-→   
-</button>
-</div>
+
 </section>
 
     {/* full page model */}
@@ -239,35 +217,7 @@ export default function Certification() {
             </div>
           )}
 
-           {/* kub */}
-      {iskubModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={kubclickclose}>
-              &times;
-            </span>
-            <div className='modaldesign'>
-            <h2>Yet to take exam</h2>
-            {/* <a href="" className='certopen'>open</a> */}
-            </div>
-            </div>
-            </div>
-          )}
-
-           {/* ter */}
-      {isterModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={terclickclose}>
-              &times;
-            </span>
-            <div className='modaldesign'>
-            <h2>Yet to take exam</h2>
-            {/* <a href="" className='certopen'>open</a> */}
-            </div>
-            </div>
-            </div>
-          )}
+          
 
 {/* Azure */}
 

@@ -1,82 +1,89 @@
- .washing-spinner-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 78vh;
-    background-color: #141414; 
-    color: #ffffff;
-  }
- 
-  
-  .spinner-text {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  
+/* 📌 Container for Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
 
-   .loader {
-    width: 120px;
-    height: 150px;
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(#ddd 50%, #bbb 51%),
-      linear-gradient(#ddd, #ddd), linear-gradient(#ddd, #ddd),
-      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
-      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%),
-      radial-gradient(ellipse at center, #aaa 25%, #eee 26%, #eee 50%, #0000 55%);
-    background-position: 0 20px, 45px 0, 8px 6px, 55px 3px, 75px 3px, 95px 3px;
-    background-size: 100% 4px, 1px 23px, 30px 8px, 15px 15px, 15px 15px, 15px 15px;
-    position: relative;
-    border-radius: 6%;
-    animation: shake 3s ease-in-out infinite;
-    transform-origin: 60px 180px;
+/* 📌 Individual Project Card */
+.pcard {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.pcard:hover {
+  transform: translateY(-5px);
+}
+
+/* 📌 Image Styling */
+.imageborder {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.imageborder img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 📌 Project Title */
+.project-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* 📌 Project Description */
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* 📌 Horizontal Line */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ddd;
+  margin: 1rem 0;
+}
+
+/* 📌 Project Link */
+.project-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.project-link:hover {
+  color: #0056b3;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .pcard {
+    width: 90%;
   }
-  .loader:before {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: 100%;
-    width: 7px;
-    height: 5px;
-    background: #aaa;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 102px 0 #aaa;
+}
+
+@media (max-width: 480px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .loader:after {
-    content: "";
-    position: absolute;
-    width: 95px;
-    height: 95px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    bottom: 20px;
-    background-color: #bbdefb;
-    background-image: 
-      linear-gradient( to right, #0004 0%, #0004 49%, #0000 50%, #0000 100% ),
-      linear-gradient(135deg, #64b5f6 50%, #607d8b 51%);
-    background-size: 30px 100%, 90px 80px;
-    border-radius: 50%;
-    background-repeat: repeat, no-repeat;
-    background-position: 0 0;
-    box-sizing: border-box;
-    border: 10px solid #DDD;
-    box-shadow: 0 0 0 4px #999 inset, 0 0 6px 6px #0004 inset;
-    animation: spin 3s ease-in-out infinite;
+
+  .pcard {
+    width: 100%;
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg) }
-    50% { transform: rotate(360deg) }
-    75% { transform: rotate(750deg) }
-    100% { transform: rotate(1800deg) }
-  }
-  @keyframes shake {
-    65%, 80%, 88%, 96% { transform: rotate(0.5deg) }
-    50%, 75%, 84%, 92% { transform: rotate(-0.5deg) }
-    0%, 50%, 100%  { transform: rotate(0) }
-  }
+}

@@ -4,6 +4,7 @@
   align-items: center;
   padding: 1rem 2rem; /* Increased padding for better spacing */
   flex-direction: column; /* Align content in column layout */
+  margin-top: 5rem;
 }
 
 .about-container {
